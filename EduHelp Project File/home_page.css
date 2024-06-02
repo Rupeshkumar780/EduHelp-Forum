@@ -190,7 +190,7 @@ footer {
 /* About */
 .about{
     margin: 100px 0;
-    max-width: 800px;
+    max-width: 750px;
     border: 3px black solid;
     border-radius: 20px;
     background: linear-gradient(0deg,#e7de34,#A7E6FF) ;
