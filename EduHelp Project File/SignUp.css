@@ -1,0 +1,86 @@
+*{
+    color: rgb(16, 9, 9); 
+    padding: 0;
+    margin: 0;  
+}
+header{
+    background-color: #cde7b6;
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+    animation: box 4s linear 0.1s infinite alternate;
+    min-height: 80px;
+    line-height:40px;
+}
+body{
+    background-color:#84d0de;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color:brown;
+    text-decoration: rgb(18, 5, 193) dotted underline;
+}
+.form{
+    border: 10px black solid ;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: large;
+    min-height: 515px;
+    min-width: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: flex-box 4s linear 0.1s infinite alternate;
+}
+h2{
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:none;
+    text-decoration: red solid underline;
+    opacity: 100%;
+}
+.EduHelp1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+} 
+span{
+     font-size: 22px;
+} 
+.inputbox{
+    font-size: large;
+}
+#pass12,#email12{
+    background-color: rgb(110, 241, 34);
+    height: 25px;
+    width: 250px;
+    padding-left: 8px;
+    border-radius: 10px;
+}
+.sighup{
+    font-family: cursive;
+    color:black;
+    padding: 3px 6px;
+    border-radius: 5px;
+    background-color: crimson;
+}
+
+@keyframes box{
+    0%{background-color:#66e556}
+    50%{background-color:#eac556}
+    100%{background-color:#39bbe6}
+}
+@keyframes flex-box{
+    0%{background: linear-gradient(45deg,rgb(32, 167, 234),gold,rgb(32,167,234));}
+    50%{background:linear-gradient(30deg,rgb(32, 167, 234),gold,rgb(32,167,234));}
+    100%{background: linear-gradient(15deg,rgb(32, 167, 234),gold,rgb(32,167,234));}
+
+}

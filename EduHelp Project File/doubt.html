@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doubts Section</title>
+  <link rel="stylesheet" href="doubt.css">
+  <link rel="stylesheet" href="home_page.css">
+</head>
+<body>  
+  <section>
+    <div class="heading1">
+      <h1 class="hrd">EDUHELP</h1>   
+    </div>
+  </section>
+
+  <nav>
+    <ul>
+      <li><a href="home_page.html">Home</a></li>
+      <li><a href="stu_mat.html">Study Materials</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><button type="submit" class="logout">Log Out</button></li>
+    </ul>
+  </nav>
+
+    <!-- Doubt Form -->
+  <form class="doubts-container">
+    <textarea type="text" class="inp" name="doubt" placeholder="Type your doubt" rows="6" required></textarea>
+    <br><br><br>
+    <button class="addn" type="submit">Post Doubt</button>
+  </form>
+
+  <!-- Doubt Display Section -->
+  <div class="doubt-display">
+    <h2>All Doubts</h2>
+    <div id="doubts-list"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
+  </footer>
+    <!-- script part -->
+    <script type="module" src="home_page.js"></script>
+    <script type="module" src="/doubt.js"></script>
+</body>
+</html>

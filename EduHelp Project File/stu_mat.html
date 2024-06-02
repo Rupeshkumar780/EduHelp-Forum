@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material</title>
+    <link rel="stylesheet" href="stu_mat.css">
+    <link rel="stylesheet" href="home_page.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <section>
+        <div class="heading1">
+          <h1 class="hrd">EDUHELP</h1>   
+        </div>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="home_page.html"> Home </a></li>
+            <li><a href="doubt.html">Doubt Section</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button type="submit" class="logout">Log Out</button></li>
+        </ul>
+    </nav>
+    <!-- Main -->
+    <div class="stu_mat">
+        <div class="upload1">
+            <h2 id="t3">Upload Section</h2>
+            <p id="upload">Upload Study Materials</p>
+            <button id="upload_widget" class="cloudinary-button">Upload files</button>   
+        </div>
+
+        <div class="std">
+            <div class="uploaded-docs"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+    <!-- script part -->
+    <script type="module" src="home_page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.14.0/cloudinary-core-shrinkwrap.min.js"></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        // Always initialize the Cloudinary widget
+        cloudinary.setCloudName("doppsfenr");
+
+        // Initialize the Cloudinary upload widget
+        var myWidget = cloudinary.createUploadWidget({
+            cloudName: "doppsfenr",
+            uploadPreset: "EduHelp", 
+            sources: ["local", "url"],
+            showAdvancedOptions: true,
+            multiple: true,
+            resource_type: "auto",
+            maxFileSize: 100000000,  //(100MB)
+        }, (error, result) => {
+            if (!error && result && result.event === "success") {
+                var uploadedUrl = result.info.url;
+                var file_name = result.info.original_filename;
+
+                console.log('Done! Here is the document URL: ', uploadedUrl);
+                alert("Document Uploaded Successfully!");
+
+                // Append the new content to .uploaded-docs
+                $('.uploaded-docs').append('<div class="upd"><p id="filen"><b>' + file_name + '</b></p><a href="' + uploadedUrl + '" target="_blank">View Document</a></div>');
+
+                // Store the URL in localStorage
+                var storedUrls = JSON.parse(localStorage.getItem('uploadedUrls')) || [];
+                var storedNames = JSON.parse(localStorage.getItem('File_names')) || [];
+
+                storedUrls.push(uploadedUrl);
+                storedNames.push(file_name);
+                localStorage.setItem('uploadedUrls', JSON.stringify(storedUrls));
+                localStorage.setItem('File_names', JSON.stringify(storedNames));
+            }
+        });
+
+        // Attach the widget to the button
+        document.getElementById('upload_widget').addEventListener('click', function () {
+            myWidget.open();
+        });
+
+        // Check if there are stored URLs in localStorage
+        var storedUrls = JSON.parse(localStorage.getItem('uploadedUrls'));
+        var storedNames = JSON.parse(localStorage.getItem('File_names'));
+
+        if (storedUrls && storedNames) {
+            // Loop through stored URLs and display documents
+            for (var i = 0; i < storedUrls.length; i++) {
+                $('.uploaded-docs').append('<div class="upd"><p><b>' + storedNames[i] + '</b></p><a href="' + storedUrls[i] + '" target="_blank">View Document</a></div>');
+            }
+        }
+    </script>
+</body>
+</html>

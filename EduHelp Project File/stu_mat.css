@@ -1,0 +1,63 @@
+body{
+    background-image: url("images/background_doubt.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+}
+#t3{
+    background: linear-gradient(rgb(221, 241, 248),rgb(0, 130, 177));
+    text-decoration: underline;
+    padding: 5px;
+    border-radius: 10px;
+}
+.upload1{
+    font-size: 22px;
+    height:250px;
+    width: 350px;
+    background: linear-gradient(0deg,rgb(245, 53, 53),rgb(235, 238, 46));
+    border: 3px black solid;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.stu_mat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 100px 0 120px 0;
+}
+.uploaded-docs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   
+}
+.upd{
+    height: 230px;
+    min-width: 280px;
+    max-width: 380px;
+    font-weight: 900;
+    margin: 50px 40px 0px 40px;
+    padding: 0 10px;
+    border: 2px solid black;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    background: linear-gradient(0deg,rgb(97, 255, 44),rgb(69, 98, 244));
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upd a{
+    color: blue;
+    text-decoration: underline;
+}

@@ -1,0 +1,86 @@
+*{
+    color: rgb(16, 9, 9); 
+    padding: 0;
+    margin: 0;  
+}
+header{
+    background-color: #cde7b6;
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+    background: linear-gradient(45deg,rgb(4, 213, 220),gold,rgb(4, 213, 220));
+    min-height: 80px;
+    line-height:40px;
+}
+body{
+    background-color:#84d0de;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color:brown;
+    text-decoration: rgb(18, 5, 193) dotted underline;
+}
+.icon{
+    height: 80px;
+    width: 80px;
+    border: 4px black solid;
+    border-radius: 50%;
+    background-image: url('images/icon.jpg');
+    background-size: cover;
+}
+.form{
+    border: 10px black solid ;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: large;
+    min-height: 515px;
+    min-width: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: flex-box 4s linear 0.1s infinite alternate;
+}
+h2{
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:none;
+    text-decoration: red solid underline;
+    opacity: 100%;
+}
+.EduHelp2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+} 
+span{
+     font-size: 22px;
+} 
+.inputbox{
+    font-size: large;
+}
+#pass,#email{
+    background-color: rgb(110, 241, 34);
+    height: 25px;
+    width: 250px;
+    padding-left: 8px;
+    border-radius: 10px;
+}
+button{
+    font-family: cursive;
+    color:black;
+    padding: 3px 6px;
+    border-radius: 5px;
+    background-color: crimson;
+}
+@keyframes flex-box{
+    0%{background: linear-gradient(45deg,green,pink,green);}
+    50%{background:linear-gradient(30deg,green,pink,green);}
+    100%{background: linear-gradient(15deg,green,pink,green);}
+}
