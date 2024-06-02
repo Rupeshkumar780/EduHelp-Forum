@@ -32,6 +32,12 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
+.home_sec img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px 20px;
+}
 .heading4{
     width: 40%;
     margin: 0;
@@ -40,12 +46,6 @@ header{
     left: 30%;
     line-height: 60px;
     text-align: center;
-}
-img{
-    margin-top:5px;
-    margin-left: 20px;
-    width: 200px;
-    height: 110px;
 }
 .hd{
     color: brown;
