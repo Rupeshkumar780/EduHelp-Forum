@@ -158,8 +158,8 @@ footer {
 /* home_page1 */
 
 #rks{
-    min-width: 700px;
-    min-height: 500px;
+    max-width: 700px;
+    max-height: 500px;
     opacity: 65%;
     margin: 10px 0;
     border: 3px black solid;
