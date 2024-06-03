@@ -82,6 +82,7 @@ nav ul li {
     display: inline;
     text-align: center;
     line-height: 30px;
+    border: 2px black solid;
     background:linear-gradient( rgb(207, 227, 241),rgb(39, 68, 230));  
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);  
@@ -139,7 +140,7 @@ nav ul li:active{
     justify-content: center;
     align-items: center;
 }
-.doubt:hover{
+.doubt1:hover{
     border: 4px white solid;
 }
 .upload:hover{
