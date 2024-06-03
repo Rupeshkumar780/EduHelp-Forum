@@ -139,7 +139,12 @@ nav ul li:active{
     justify-content: center;
     align-items: center;
 }
-
+.doubt:hover{
+    border: 4px white solid;
+}
+.upload:hover{
+    border: 4px white solid;
+}
 .home_b{
     background:linear-gradient( rgb(203, 226, 243),rgb(2, 39, 248));  
     color: black;
