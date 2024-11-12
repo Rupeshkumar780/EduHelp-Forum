@@ -37,6 +37,8 @@ body{
     justify-content: space-evenly;   
 } */
 .doubt-display h2{
+    display : flex;
+    justify-content : center;
     margin: 20px auto;
     width: 200px;
     padding: 5px 0;
