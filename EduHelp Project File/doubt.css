@@ -37,6 +37,8 @@ body{
     justify-content: space-evenly;   
 } */
 .doubt-display h2{
+    display : flex;
+    align-items: center;
     width: 200px;
     padding: 5px 0;
     text-decoration: underline solid black;
