@@ -31,11 +31,11 @@ body{
     border-radius: 10px;
     color: white;
 }
-.doubt-display{
+/* .doubt-display{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;   
-}
+} */
 .doubt-display h2{
     width: 200px;
     padding: 5px 0;
