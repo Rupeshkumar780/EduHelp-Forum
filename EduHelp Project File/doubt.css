@@ -101,3 +101,10 @@ textarea{
     font-weight: bolder;
     background:linear-gradient( rgb(192, 222, 243),rgb(39, 68, 230));  
 }
+@media(max-width : 550px){
+    .form{
+        min-width:280px;
+        min-height:400px;
+        margin : 100px 0;
+    }
+}
