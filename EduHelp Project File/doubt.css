@@ -8,7 +8,7 @@ body{
     font-size: larger;
 }
 .doubts-container{
-    margin: 50px 0;
+    margin: 100px 0;
 }
 .inp{
     color:red;
@@ -17,7 +17,7 @@ body{
     border-radius: 10px;
     border: 4px black solid;
     text-align: start;
-    opacity: 90%;
+    opacity: 85%;
     font-size: 24px;
     font-weight: 900;
     background-image: url("images/bg.jpg");
@@ -31,28 +31,24 @@ body{
     border-radius: 10px;
     color: white;
 }
-/* .doubt-display{
+.doubt-display{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;   
-} */
+}
 .doubt-display h2{
-    display : flex;
-    justify-content : center;
-    margin: 20px auto;
     width: 200px;
     padding: 5px 0;
     text-decoration: underline solid black;
     text-align: center;
     border-radius: 15px;
-    background: linear-gradient(rgb(225, 86, 86),rgb(220, 4, 4));
+    background: linear-gradient(rgb(245, 165, 165),rgb(252, 20, 20));
 }
 .doubt-display h3{
     translate: -100px;
     margin: 0;
     padding: 0;
 }
-
 #doubts-list{
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +62,7 @@ body{
     max-width: 400px;
     text-align: center;
     border: 4px solid black;
-    background: linear-gradient(0deg,#e7de34,#A7E6FF) ;
+    background: linear-gradient(#f0fff9,#69a3c4) ;
     border-radius: 30px;
     margin: 10px 25px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
@@ -79,7 +75,6 @@ body{
 }
 textarea{
     border-radius: 10px;
-    background: linear-gradient(0deg,rgb(255, 255, 231),rgb(241, 241, 85));
 }
 .response-form{
     display: flex;
@@ -87,10 +82,10 @@ textarea{
     justify-content: center;
     align-items: center;
 }
-.post_but{
+/* .post_but{
     height: 25px;
     border-radius: 10px;
     margin: 10px 0;
     font-weight: bolder;
-    background:linear-gradient( rgb(207, 227, 241),rgb(39, 68, 230));  
-}
+    background:linear-gradient( rgb(192, 222, 243),rgb(39, 68, 230));  
+} */
