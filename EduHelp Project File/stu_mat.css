@@ -9,7 +9,6 @@ body{
     text-align: center;
 }
 #t3{
-    background: linear-gradient(rgb(221, 241, 248),rgb(0, 130, 177));
     text-decoration: underline;
     padding: 5px;
     border-radius: 10px;
@@ -18,7 +17,7 @@ body{
     font-size: 22px;
     height:250px;
     width: 350px;
-    background: linear-gradient(0deg,rgb(245, 53, 53),rgb(235, 238, 46));
+    background: linear-gradient(#f0fff9,#09f295);
     border: 3px black solid;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
     border-radius: 15px;
@@ -50,7 +49,7 @@ body{
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     font-size: 1.2rem;
-    background: linear-gradient(0deg,rgb(97, 255, 44),rgb(69, 98, 244));
+    background: linear-gradient(rgb(194, 255, 174),rgb(115, 245, 72));
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
