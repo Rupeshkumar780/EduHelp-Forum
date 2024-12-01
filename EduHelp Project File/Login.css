@@ -39,8 +39,7 @@ h1{
     border: 7px black solid ;
     color: white;
     border-radius: 40px;
-    margin-top: 40px;
-    margin-bottom: 0;
+    margin : 100px 0;
     font-size: large;
     min-height: 515px;
     min-width: 515px;
@@ -76,11 +75,13 @@ span{
     border-radius: 10px;
 }
 button{
-    font-family: cursive;
     color:black;
     padding: 3px 6px;
     border-radius: 5px;
-    background-color: crimson;
+    background : linear-gradient(rgb(255, 154, 154),rgb(255, 22, 22));
+}
+#signup a{
+    color: aqua;
 }
 @keyframes blur-box{
     0%{backdrop-filter: blur(3px)}
@@ -90,6 +91,6 @@ button{
     .form{
         min-width:280px;
         min-height:400px;
-        margin : 100px 0;
+        margin : 120px 0;
     }
 }
