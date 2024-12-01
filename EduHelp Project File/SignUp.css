@@ -32,7 +32,7 @@ h3{
     border: 7px black solid ;
     color: white;
     border-radius: 40px;
-    margin-top: 30px;
+    margin : 50px 0;
     margin-bottom: 0;
     font-size: large;
     min-height: 515px;
@@ -83,4 +83,11 @@ span{
 @keyframes blur-box{
     0%{backdrop-filter: blur(3px)}
     100%{backdrop-filter: blur(8px)}
+}
+@media(max-width : 550px){
+    .form{
+        min-width:280px;
+        min-height:400px;
+        margin : 100px 0;
+    }
 }
