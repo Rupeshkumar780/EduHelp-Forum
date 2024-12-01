@@ -1,291 +1,55 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(182, 244, 244);
-    background-image: url("images/back.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-section {
-    text-align: center;
-    margin-top: 1.5px;
-    width: 100%;
-    background: linear-gradient(rgb(243, 255, 255),#64f9bd);
-    height: 120px;
-    line-height: 120px;
-    border-radius: 10px;
-}
-header{
-    width: 100%;
-}
-.home_sec{
-    background: linear-gradient(rgb(243, 255, 255),#64f9bd);
-    display: flex;
-    flex-direction: row;
-}
-.heading4{
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.home_sec img{
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    margin: auto 8px ;
-    padding: 5px 0;
-}
-@media(max-width:350px){
-    .home_sec{
-        display: flex;
-        flex-direction: column;
-    }
-    .home_sec img{
-        align-self: center;
-    }
-}
-.hd{
-    color: brown;
-    text-decoration: black solid underline;
-    margin: 0 0 5px 0;
-    padding: 0;
-}
-#t1{
-    margin: 0;
-    padding: 0;
-    color: darkblue;
-    text-decoration:rgb(249, 80, 1) dotted underline;
-}
-nav {
-    background:linear-gradient(rgb(242, 223, 195),rgb(255, 191, 95));
-    padding: 10px 0;
-    margin: 8px 0;
-    border-radius: 40px;
-    width: 100%;
-}
-nav ul {
-    list-style: none;
-    margin: 0;
-    min-height: 30px;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-nav ul li {
-    font-size: 1.1rem;
-    height: 30px;
-    margin: 0;
-    display: inline;
-    text-align: center;
-    line-height: 30px;
-    background:linear-gradient( rgb(207, 227, 241),rgb(39, 68, 230));  
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);  
-}
-nav ul li a{
-    padding: 3px 20px; 
-    text-decoration: none;
-    color:black;
-    font-size: 1.2rem;    
-}
-nav ul li:active{
-    border: 2px red solid;
-}
-.logout{
-    text-decoration: none;
-    color:black;
-    padding: 3px 20px;
-    font-size: 1.2rem;
-    background:linear-gradient( rgb(207, 227, 241),rgb(49, 75, 223));
-    border: none;
-    border-radius: 5px;    
-}
-.main_a{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: larger;
-    margin: 130px 0; 
-}
-@media(max-width : 650px){
-    .main_a{
-        display: flex;
-        align-items: center;
-        margin: 0;
-        flex-direction: column;
-    }
-    .main_a .upload{
-        margin: 50px auto 25px auto;
-    }
-    .main_a .doubt1{
-        margin: 50px auto 25px auto;
-    }
-}
-.upload{
-    height: 250px;
-    width: 250px;
-    margin-right: 100px;
-    background: linear-gradient(#f0fff9,#69a3c4) ;
-    border-radius: 30px;
-    border: 4px solid black;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
-    box-shadow:black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-}
-.doubt1{
-    height: 250px;
-    width: 250px;
-    text-align: center;
-    border: 4px solid black;
-    background: linear-gradient(#f0fff9,#69a3c4) ;
-    border-radius: 30px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
-    box-shadow:black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.upload:hover{
-    border: 4px brown solid;
-}
-.doubt1:hover{
-    border: 4px brown solid;
-}
-.home_b{
-    background:linear-gradient( rgb(174, 209, 235),rgb(35, 65, 234));  
-    color: black;
-    border-radius: 5px;
-    padding: 10px;
-    border: 3px red solid;
-}
-footer {
-    background : linear-gradient(0deg,rgb(28, 28, 28),rgb(158, 157, 157));
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHelp Forum</title>
+    <link rel="stylesheet" href="home_page.css">
 
-/* home_page1 */
-#rks{
-    height: 500px;
-    width: 700px;
-    opacity: 65%;
-    margin :20px auto;
-    border: 3px black solid;
-    border-radius: 15px; 
-}
-.hrd{
-    margin: 0;
-    padding: 0;
-}
-.heading1{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 5rem;
-    background: url("images/heading.webp");
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: animate 4s alternate infinite;
-}
-@media(max-width : 550px){
-    .heading1{
-        font-size: 2rem;
-    }
-    section {
-        height: 70px;
-        line-height: 70px;
-    }
-    #rks{
-        height: 300px;
-        width: 200px;
-        margin: 100px 0;
-    }nav ul li {
-        margin : 4px 10px ;
-    }
-}
-@media(max-width : 800px) and (min-width : 550px){
-    .heading1{
-        font-size: 3.5rem;
-    }section {
-        height: 90px;
-        line-height: 90px;
-    }
-    #rks{
-        height: 500px;
-        width: 400px;
-        margin: 60px 0;    
-    }
-    nav ul li {
-        margin : 4px 10px ;
-    }
-}
-@keyframes animate {
-    from{background-position: 0% 80%;}
-    to{background-position: 100% 50%;}
-}
+</head>
 
-/* About */
-.about{
-    margin: 80px 10px;
-    max-width: 700px;
-    border: 3px black solid;
-    border-radius: 20px;
-    background: linear-gradient(#f0fff9,#69a3c4) ;
-    padding: 0px 10px 0px 20px;
-    display: flex;
-    font-size: 23px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.about p{
-    margin: 0;
-}
-.about h3{
-    margin: 10px auto;
-}
-.about h1{
-    color: rgb(214, 9, 9);
-}
+<body>
+    <!-- Welcome Section -->
+    <header class="home_sec">
+        <img src="images/icon_home1.jpeg" alt="icon">
+        <div class="heading4"> 
+            <h1 class="hd">HELLO ENTHUSIAST </h1>
+            <h2 id="t1">Welcome to Your EduHelp</h2>
+        </div>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home_page.html"> Home </a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button type="submit" class="logout">Log Out</button></li>
+        </ul>
+    </nav>
 
-/* Contact */
-.contact{
-    margin: 100px 0;
-    max-width: 600px;
-    min-height: 250px;
-    border: 3px black solid;
-    border-radius: 20px;
-    background: linear-gradient(#f0fff9,#69a3c4) ;
-    padding: 20px 15px 20px 20px;
-    display: flex;
-    font-size: 25px;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.contact p{
-    margin: 0;
-}
-.contact h1{
-    text-align: center;
-    color: rgb(81, 5, 210);
-}
+    <!-- Main Body -->
+    <div class="main_a">
+        <div class="upload">
+            <p><b><u>Upload Section</u></b></p>
+            <p id="upload">Upload Study Materials</p>
+            <a href="stu_mat.html" class="home_b" id="post_a">Click here!</a>  
+        </div>
+
+        <div class="doubt1">
+            <p><b><u>Doubt Section</u></b></p>
+            <p>Fell free to ask your doubt anytime</p>
+            <a href="doubt.html" class="home_b" id="post_b">Click here!</a>
+        </div>   
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+    <!-- script part -->
+    <script type="module" src="home_page.js"></script>
+    
+</body>
+</html>
