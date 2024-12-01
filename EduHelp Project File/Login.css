@@ -35,6 +35,7 @@ h1{
 .form{
     border: 10px black solid ;
     border-radius: 40px;
+    color : white;
     margin-top: 40px;
     margin-bottom: 0;
     font-size: large;
@@ -49,7 +50,6 @@ h1{
 h2{
     font-size: 45px;
     font-family: 'Times New Roman', Times, serif;
-    background-color:none;
     text-decoration: red solid underline;
     opacity: 100%;
 }
@@ -66,7 +66,7 @@ span{
     font-size: large;
 }
 #pass,#email{
-    background-color: rgb(110, 241, 34);
+    background-color: white;
     height: 25px;
     width: 250px;
     padding-left: 8px;
