@@ -55,7 +55,6 @@ h2{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
 } 
 span{
      font-size: 22px;
@@ -75,16 +74,4 @@ span{
     padding: 3px 6px;
     border-radius: 5px;
     background-color: crimson;
-}
-
-@keyframes box{
-    0%{background-color:#66e556}
-    50%{background-color:#eac556}
-    100%{background-color:#39bbe6}
-}
-@keyframes flex-box{
-    0%{background: linear-gradient(45deg,rgb(32, 167, 234),gold,rgb(32,167,234));}
-    50%{background:linear-gradient(30deg,rgb(32, 167, 234),gold,rgb(32,167,234));}
-    100%{background: linear-gradient(15deg,rgb(32, 167, 234),gold,rgb(32,167,234));}
-
 }
