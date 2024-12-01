@@ -94,10 +94,10 @@ textarea{
     justify-content: center;
     align-items: center;
 }
-/* .post_but{
+.post_but{
     height: 25px;
     border-radius: 10px;
     margin: 10px 0;
     font-weight: bolder;
     background:linear-gradient( rgb(192, 222, 243),rgb(39, 68, 230));  
-} */
+}
