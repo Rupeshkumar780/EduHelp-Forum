@@ -46,9 +46,14 @@ body{
     border-radius: 15px;
     background: linear-gradient(rgb(245, 165, 165),rgb(252, 20, 20));
 }
-@media(max-width:810px){
+@media(max-width:600px){
     .doubt-display h2{
         margin : auto;
+    }
+}
+@media(max-width:810px) and (min-width:600px){
+    .doubt-display h2{
+        margin : auto 100px;
     }
 }
 .doubt-display h3{
