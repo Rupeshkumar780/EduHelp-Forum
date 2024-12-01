@@ -75,3 +75,8 @@ span{
     border-radius: 5px;
     background-color: crimson;
 }
+@keyframes box{
+    0%{background-color:#66e556}
+    50%{background-color:#eac556}
+    100%{background-color:#39bbe6}
+}
