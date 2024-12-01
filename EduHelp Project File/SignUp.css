@@ -76,9 +76,9 @@ span{
     background-color: crimson;
 }
 @keyframes box{
-    0%{background-color:#66e556}
-    50%{background-color:#eac556}
-    100%{background-color:#39bbe6}
+    0%{background-color:#defbef}
+    50%{background-color:#91ffd3}
+    100%{background-color:#65ffc1}
 }
 @keyframes blur-box{
     0%{backdrop-filter: blur(3px)}
