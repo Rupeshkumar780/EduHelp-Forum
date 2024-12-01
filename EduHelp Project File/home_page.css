@@ -41,7 +41,17 @@ header{
     border-radius: 50%;
     height: 100px;
     width: 100px;
-   margin: 7px 8px ;
+    margin: auto 8px ;
+    padding: 5px 0;
+}
+@media(max-width:350px){
+    .home_sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .home_sec img{
+        align-self: center;
+    }
 }
 .hd{
     color: brown;
@@ -74,7 +84,7 @@ nav ul {
 nav ul li {
     font-size: 1.1rem;
     height: 30px;
-    margin: 0px;
+    margin: 0;
     display: inline;
     text-align: center;
     line-height: 30px;
@@ -83,7 +93,7 @@ nav ul li {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);  
 }
 nav ul li a{
-    padding: 3px 12px; 
+    padding: 3px 20px; 
     text-decoration: none;
     color:black;
     font-size: 1.2rem;    
@@ -94,6 +104,7 @@ nav ul li:active{
 .logout{
     text-decoration: none;
     color:black;
+    padding: 3px 20px;
     font-size: 1.2rem;
     background:linear-gradient( rgb(207, 227, 241),rgb(49, 75, 223));
     border: none;
@@ -171,7 +182,6 @@ footer {
 }
 
 /* home_page1 */
-
 #rks{
     height: 500px;
     width: 700px;
@@ -196,6 +206,41 @@ footer {
     -webkit-background-clip: text;
     color: transparent;
     animation: animate 4s alternate infinite;
+}
+@media(max-width : 550px){
+    .heading1{
+        font-size: 2rem;
+    }
+    section {
+        height: 70px;
+        line-height: 70px;
+    }
+    #rks{
+        height: 300px;
+        width: 200px;
+        margin: 100px 0;
+    }nav ul li {
+        margin : 4px 10px ;
+    }
+    .nav-bar-home li{
+        margin: 4px 50px;
+    }
+}
+@media(max-width : 800px) and (min-width : 550px){
+    .heading1{
+        font-size: 3.5rem;
+    }section {
+        height: 90px;
+        line-height: 90px;
+    }
+    #rks{
+        height: 500px;
+        width: 400px;
+        margin: 60px 0;    
+    }
+    nav ul li {
+        margin : 4px 10px ;
+    }
 }
 @keyframes animate {
     from{background-position: 0% 80%;}
