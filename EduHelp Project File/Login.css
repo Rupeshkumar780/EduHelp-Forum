@@ -86,3 +86,10 @@ button{
     0%{backdrop-filter: blur(3px)}
     100%{backdrop-filter: blur(8px)}
 }
+@media(max-width : 550px){
+    .form{
+        min-width:280px;
+        min-height:400px;
+        margin : 100px 0;
+    }
+}
