@@ -8,7 +8,7 @@ header{
     text-align: center;
     width: 100%;
     font-size: larger;
-    background: linear-gradient(45deg,rgb(4, 213, 220),gold,rgb(4, 213, 220));
+    background: aqua;
     min-height: 80px;
     line-height:40px;
 }
