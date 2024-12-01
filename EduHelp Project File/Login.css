@@ -4,7 +4,7 @@
     margin: 0;  
 }
 header{
-    background-color: #cde7b6;
+    background-color: #84d0de;
     text-align: center;
     width: 100%;
     font-size: larger;
@@ -44,7 +44,8 @@ h1{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    animation: flex-box 4s linear 0.1s infinite alternate;
+    background: transparent;
+    filter: blur(10px);
 }
 h2{
     font-size: 45px;
@@ -78,9 +79,4 @@ button{
     padding: 3px 6px;
     border-radius: 5px;
     background-color: crimson;
-}
-@keyframes flex-box{
-    0%{background: linear-gradient(45deg,green,pink,green);}
-    50%{background:linear-gradient(30deg,green,pink,green);}
-    100%{background: linear-gradient(15deg,green,pink,green);}
 }
