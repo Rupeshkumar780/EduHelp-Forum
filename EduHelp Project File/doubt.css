@@ -33,16 +33,23 @@ body{
 }
 .doubt-display{
     display: flex;
+    margin: 10px 0;
     flex-wrap: wrap;
     justify-content: space-evenly;   
 }
 .doubt-display h2{
     width: 200px;
     padding: 5px 0;
+    margin: auto 300px;
     text-decoration: underline solid black;
     text-align: center;
     border-radius: 15px;
     background: linear-gradient(rgb(245, 165, 165),rgb(252, 20, 20));
+}
+@media(max-width:810px){
+    .doubt-display h2{
+        margin : auto;
+    }
 }
 .doubt-display h3{
     translate: -100px;
